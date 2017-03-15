@@ -4,14 +4,14 @@
 	<title>hello world</title>
 </head>
 <body>
-	<div id="app"></div>
+	<div id="app">
+		<hello-world></hello-world>
+	</div>
 	<script src="http://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+	<script type="text/javascript" src='./components/helloWorld.js'></script>
 	<script type="text/javascript">
 		new Vue({
-			el: '#app',
-			render (h) {
-				return h('h2', 'hello world!');
-			}
+			el: '#app'
 		})
 	</script>
 </body>
